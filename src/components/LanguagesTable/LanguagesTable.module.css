@@ -1,0 +1,68 @@
+.LanguagesList {
+    padding-bottom: 4rem;
+  }
+  .LanguagesList h2 {
+    text-align: center;
+  }
+  .TableWrapper {
+    overflow-y: auto;
+    width: fit-content;
+    margin: 0 auto;
+    height: 40.5rem;
+    max-height: 60vh;
+  }
+  .LanguagesTable {
+    width: 40rem;
+    max-width: 90vw;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed;
+    background-color: white;
+  }
+  .LanguagesTable thead {
+    background-color: rgb(var(--baseClr));
+    position: sticky;
+    top: 0;
+  }
+  .LanguagesTable th {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(var(--backClr));
+  }
+  .LanguagesTable th:after,
+  .LanguagesTable th:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+  .LanguagesTable th:before {
+    top: 0;
+  }
+  .LanguagesTable th:after {
+    bottom: 0;
+  }
+  .LanguagesTable td,
+  .LanguagesTable th {
+    padding: 0.2rem;
+  }
+  .LanguagesTable tr:nth-child(even) {
+    background-color: rgba(var(--baseClr), 0.15);
+  }
+  .LanguagesTable td {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 640px) {
+    .LanguagesTable thead th {
+      font-size: 0.95rem;
+      font-weight: normal;
+    }
+    .LanguagesTable tbody td {
+      font-size: 0.85rem;
+    }
+  }
+  

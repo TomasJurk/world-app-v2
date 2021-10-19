@@ -1,12 +1,12 @@
-import styles from './LanguagesTable.module.css';
-import { LanguagesTableRow } from './LanguagesTableRow/LanguagesTableRow';
-import { LanguagesListItemType } from '../../shared/types';
+import styles from "./LanguagesTable.module.css";
+import { LanguagesTableRow } from "./LanguagesTableRow/LanguagesTableRow";
+import { LanguagesListItemType } from "../../shared/types";
 
 type LanguagesTableProps = {
-    languages: {
-        [key: string]: LanguagesListItemType
-    }
-}
+  languages: {
+    [key: string]: LanguagesListItemType;
+  };
+};
 
 export const LanguagesTable = ({ languages }: LanguagesTableProps) => {
   const languageRows = Object.keys(languages).map((lang, i) => (
@@ -20,16 +20,13 @@ export const LanguagesTable = ({ languages }: LanguagesTableProps) => {
 
   return (
     <section className={styles.LanguagesList}>
-      <header>
-        <h2>World languages list</h2>
-      </header>
       <div className={styles.TableWrapper}>
         <table className={styles.LanguagesTable}>
           <thead>
             <tr>
               <th>Language</th>
               <th>Countries</th>
-              <th>Aprx. speaking population (mil)</th>
+              <th>Speakers (mil)</th>
             </tr>
           </thead>
           <tbody>{languageRows}</tbody>

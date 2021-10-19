@@ -1,5 +1,5 @@
 :root {
-  font-size: calc(0.4vw + 12px);
+  font-size: calc(0.4vw + 10px);
   --baseClr: 40, 55, 71;
   --backClr: 243, 243, 243;
 }
@@ -11,6 +11,6 @@
   outline: none;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+body, select {
+  font-family: 'Roboto Mono', monospace;
 }

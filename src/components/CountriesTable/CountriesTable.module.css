@@ -1,62 +1,60 @@
 .TableWrapper {
-    overflow-y: auto;
-    width: fit-content;
-    margin: 0 auto;
-    height: 40.5rem;
-    max-height: 60vh;
+  overflow-y: auto;
+  width: fit-content;
+  margin: 0 auto;
+  height: 40.5rem;
+  max-height: 60vh;
+}
+.CountriesTable {
+  width: 44rem;
+  max-width: 90vw;
+  text-align: right;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+  background-color: white;
+}
+.CountriesTable thead {
+  background-color: rgb(var(--baseClr));
+  position: sticky;
+  top: 0;
+}
+.CountriesTable th {
+  font-weight: bold;
+  color: rgb(var(--backClr));
+}
+.CountriesTable th:after,
+.CountriesTable th:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.CountriesTable th:before {
+  top: 0;
+}
+.CountriesTable th:after {
+  bottom: 0;
+}
+.CountriesTable td,
+.CountriesTable th {
+  padding: 0.2rem;
+}
+.CountriesTable tr:nth-child(even) {
+  background-color: rgba(var(--baseClr), 0.15);
+}
+.CountriesTable td {
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .CountriesTable thead th {
+    font-size: 0.95rem;
+    font-weight: normal;
   }
-  .CountriesTable {
-    width: 40rem;
-    max-width: 90vw;
-    text-align: right;
-    border-collapse: collapse;
-    margin: 0 auto;
-    table-layout: fixed;
-    background-color: white;
+  .CountriesTable tbody td {
+    font-size: 0.85rem;
   }
-  .CountriesTable thead {
-    background-color: rgb(var(--baseClr));
-    position: sticky;
-    top: 0;
-  }
-  .CountriesTable th {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: rgb(var(--backClr));
-  }
-  .CountriesTable th:after,
-  .CountriesTable th:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: black;
-  }
-  .CountriesTable th:before {
-    top: 0;
-  }
-  .CountriesTable th:after {
-    bottom: 0;
-  }
-  .CountriesTable td,
-  .CountriesTable th {
-    padding: 0.2rem;
-  }
-  .CountriesTable tr:nth-child(even) {
-    background-color: rgba(var(--baseClr), .15);
-  }
-  .CountriesTable td {
-    font-size: 1rem;
-  }
-  
-  @media (max-width: 640px) {
-    .CountriesTable thead th {
-      font-size: .95rem;
-      font-weight: normal;
-    }
-    .CountriesTable tbody td {
-      font-size: 0.85rem;
-    }
-  }
-  
+}

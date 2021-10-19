@@ -1,0 +1,45 @@
+.App {
+  min-height: 100vh;
+  background-color: rgb(var(--backClr));
+}
+nav {
+  height: 5.4rem;
+}
+nav > ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: fit-content;
+  display: flex;
+}
+nav > ul > li {
+  margin: 0 1rem;
+}
+nav a {
+  color: rgb(var(--baseClr));
+  text-decoration: none;
+  padding: .3rem .5rem;
+}
+.SelectedLink {
+  background-color: rgb(var(--baseClr));
+  color: rgb(var(--backClr));
+}
+header {
+  padding: 2rem 0;
+}
+h1 {
+  text-align: center;
+}
+.SortingContainer {
+  margin: 1rem auto;
+  width: 40rem;
+  max-width: 90vw;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+.SortingContainer select {
+  width: 7rem;
+  padding: 0.2rem;
+  margin: 0 1rem;
+}
